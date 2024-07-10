@@ -1,24 +1,43 @@
-let num = document.querySelector("p");
-let count = 0;
-num.innerHTML = count;
+*{
+    margin: 0;
+    padding: 0;
+    background: #FEFBD8;
+}
+#body{
+   background-color: beige;
+}
+h1{
+     display: flex; 
+    justify-content: center;
+    margin-top: 150px;
+    font-size: 70px;
+    color: #987D9A;
+}
 
-
-let increase = document.querySelector("#increase")
-increase.addEventListener("click", ()=> {
-    count++;
-    num.innerHTML = count;
-});
-
-let reset = document.querySelector("#reset")
-reset.addEventListener("click", ()=> {
-    count = 0;
-    num.innerHTML = count;
-});
-
-let decrease = document.querySelector("#decrease")
-decrease.addEventListener("click", ()=> {
-    if(count > 0){
-        count--; 
-        num.innerHTML = count;
-    }
-});
+#num{
+    display: flex;
+    justify-content: center;
+    color: #BB9AB1;
+    font-size: 150px;
+    margin-top: 10px;
+}
+#main{
+    display: flex;
+    justify-content: center;
+}
+.one{
+   margin: 15px;
+   border: 3px solid rgb(198, 71, 92);
+   background-color: #EECEB9;
+   border-radius: 8px;
+   /* padding: 5px; */
+   padding-left: 15px;
+   padding-right: 15px;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   font-family: 'Times New Roman', Times, serif;
+}
+.one:hover{
+    cursor: pointer;
+    border-color: blueviolet;
+}
